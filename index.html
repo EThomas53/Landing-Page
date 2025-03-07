@@ -14,34 +14,37 @@
 
 <body>
   <header>
-    <div class="logo">
-      <a href="https://picsum.photos ">Lorem Picsum</a>
-      <p>The Lorem Ipsum for photos.</p>
+    <div class="corral fence">
+      <div class="logo">
+        <a href="https://picsum.photos ">Lorem Picsum</a>
+        <p>The Lorem Ipsum for photos.</p>
+      </div>
+
+      <ul class="headliner">
+        <li><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">link one</a></li>
+        <li><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">link two</a></li>
+        <li><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">link three</a></li>
+      </ul>
     </div>
-
-    <ul class="headliner">
-      <li><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">link one</a></li>
-      <li><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">link two</a></li>
-      <li><a href="https://picsum.photos" target="_blank" rel="noopener noreferrer">link three</a></li>
-    </ul>
-
   </header>
 
   <section>
-    <div class="container">
-      <div class="intro">
-        <p>Easy to use, stylish placeholders</p>
+    <div class="corral fence">
+      <div class="container">
+        <div class="intro">
+          <p>Easy to use, stylish placeholders</p>
+        </div>
+        <p>Just add your desired image size (width & height) after our URL, and you'll get a random image</p>
+        <button>Free</button>
       </div>
-      <p>Just add your desired image size (width & height) after our URL, and you'll get a random image</p>
-      <button>Free</button>
-    </div>
-    <div class="illustration">
-      <img src="https://picsum.photos/450/250" alt="placeholder image">
+      <div class="illustration">
+        <img src="https://picsum.photos/450/250" alt="placeholder image">
+      </div>
     </div>
   </section>
 
   <article>
-    <h3>Some random examples, refresh the page, again.</h3>
+    <h3>Some random examples, refresh the page, again, again...</h3>
     <div class="img-row">
       <div class="img-set">
         <div class="img-frame">
@@ -53,7 +56,7 @@
         <div class="img-frame">
           <img src="https://picsum.photos/seed/picsum/120" alt="placeholder image">
         </div>
-        <p>Get the same random image every time, by adding <b>/seed/{seed}</b> to the start of the url.</p>
+        <p>Get the same random image, by adding <b>/seed/{seed}</b> to the start of the url.</p>
       </div>
       <div class="img-set">
         <div class="img-frame">
@@ -71,24 +74,27 @@
   </article>
 
   <aside>
-    <div>
+    <div class="fence">
       <p>Proudly powered by <b>Fastly</b>. Created by David Marby & Nijiko Yonskai. With images from
-        <b>Unsplash.</b> Lorem Picsum provides an easy way for web developers to get elegant placeholder images. API
-        access is available through simple and intuitive urls like picsum.photos/200/300 for a random 200px x 300px
-        image.
+        <b>Unsplash.</b> Lorem Picsum provides an easy way for web developers to get elegant placeholder images. FREE!
       </p>
       <sub>
         <bold>Alternativeto</bold>,
         <cite>Crowdsourced Software recomendations</cite>
       </sub>
-
+    </div>
   </aside>
 
   <div class="closer">
-    <div class="focus-box">
-      <h6>Call to action! It's time!</h6>
-      <p>Sign up for out product by clicking the button over there!</p>
-      <button>Sign up</button>
+    <div class="focus-box fence">
+      <div class="focus-phrase">
+        <p><b>Stop wasting your time!</b>
+          Stop searching for placeholder images! <br> <b>Lorem Picsum!</b> Bookmark it Right now!
+        </p>
+      </div>
+      <div>
+        <button onclick="topFunction()" id="closerBtn" title="Go to top">Top</button>
+      </div>
     </div>
   </div>
 
@@ -97,7 +103,12 @@
   </footer>
 
 
-  <script src="" async defer></script>
+  <script async defer>
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </body>
 
 </html>
