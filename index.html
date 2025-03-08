@@ -35,7 +35,7 @@
           <p>Easy to use, stylish placeholders</p>
         </div>
         <p>Just add your desired image size (width & height) after our URL, and you'll get a random image</p>
-        <button>Free</button>
+        <button id="introBtn">Free</button>
       </div>
       <div class="illustration">
         <img src="https://picsum.photos/450/250" alt="placeholder image">
@@ -56,7 +56,7 @@
         <div class="img-frame">
           <img src="https://picsum.photos/seed/picsum/120" alt="placeholder image">
         </div>
-        <p>Get the same random image, by adding <b>/seed/{seed}</b> to the start of the url.</p>
+        <p>Get the same random image, add<b>/seed/{seed}</b> to the start of the url.</p>
       </div>
       <div class="img-set">
         <div class="img-frame">
@@ -104,6 +104,11 @@
 
 
   <script async defer>
+    document.getElementById("introBtn").addEventListener('click', function () {
+      location.reload();
+      return false;
+    });
+
     function topFunction() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
